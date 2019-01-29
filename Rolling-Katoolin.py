@@ -21,9 +21,9 @@ def main():
 		fout.write(line)
 		fin.close()
     		fout.close()
-   		 os.system("apt-get -y update -m")
+   		os.system("apt-get -y update -m")
     		os.system("apt-get -y upgrade")
-   		 os.system("updatedb")
+   		os.system("updatedb")
     		os.system("mandb")
 	except KeyboardInterrupt:
 		print ("Shutdown requested...Goodbye...")
